@@ -1,12 +1,12 @@
 {
-    "name": "barryvdh/composer-cleanup-plugin",
-    "type": "composer-plugin",
+    "name": "marifetler/composer-cleanup-forproduction-plugin",
+    "type": "composer-cleanup-forproduction-plugin",
     "description": "A composer cleanup plugin, to remove tests and documentation to save space",
     "license": "MIT",
     "authors": [
         {
-            "name": "Barry vd. Heuvel",
-            "email": "barryvdh@gmail.com"
+            "name": "Mecal Topantas",
+            "email": "mecal@gmail.com"
         }
     ],
     "require": {
