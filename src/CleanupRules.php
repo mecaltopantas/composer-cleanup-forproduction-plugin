@@ -8,7 +8,7 @@ class CleanupRules
     {
         // Default patterns for common files
         $docs = 'README* CHANGELOG* FAQ* CONTRIBUTING* HISTORY* UPGRADING* UPGRADE* package* demo example examples doc docs readme*';
-        $tests = '.travis.yml .scrutinizer.yml phpunit.xml* phpunit.php test tests Tests travis';
+        $tests = '.travis.yml .scrutinizer.yml phpunit phpunit.xml* phpunit.php test tests Tests travis';
 
         return array(
 
@@ -30,6 +30,7 @@ class CleanupRules
             'symfony/security-core'                 => array($docs, $tests),
             'symfony/translation'                   => array($docs, $tests),
             'symfony/var-dumper'                    => array($docs, $tests),
+            'symfony/yaml'                    => array($docs, $tests),
 
             // Default Laravel 4 install
             'classpreloader/classpreloader'         => array($docs, $tests),
@@ -91,6 +92,28 @@ class CleanupRules
             'twig/twig'                             => array($docs, $tests),
             'venturecraft/revisionable'             => array($docs, $tests),
             'willdurand/geocoder'                   => array($docs, $tests),
+            'mockery/mockery'             => array($docs, $tests),
+            'laravel/lumen-framework'                     => array($docs, $tests, 'build'),
+            'mtdowling/cron-expression' => array($docs, $tests),
+            'phpdocumentor/reflection-common'     => array($docs, $tests),
+            'phpdocumentor/type-resolver'     => array($docs, $tests),
+            'phpspec/prophecy' => array($docs, $tests),
+            
+
+            'sebastian/code-unit-reverse-lookup' => array($docs, $tests),
+            'sebastian/comparator' => array($docs, $tests),
+            'sebastian/diff' => array($docs, $tests),
+            'sebastian/environment' => array($docs, $tests),
+            'sebastian/exporter' => array($docs, $tests),
+            'sebastian/global-state' => array($docs, $tests),
+            'sebastian/object-enumerator' => array($docs, $tests),
+            'sebastian/recursion-context' => array($docs, $tests),
+            'sebastian/global-state' => array($docs, $tests),
+            'sebastian/global-state' => array($docs, $tests),
+
+            'webmozart/assert' => array($docs,$tests)
+
+
         );
     }
 
