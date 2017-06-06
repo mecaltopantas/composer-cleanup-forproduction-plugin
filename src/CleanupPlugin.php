@@ -30,6 +30,7 @@ class CleanupPlugin implements PluginInterface, EventSubscriberInterface
      */
     public function activate(Composer $composer, IOInterface $io)
     {
+        echo "Start------>>>>>>>";
         $this->composer = $composer;
         $this->io = $io;
         $this->config = $composer->getConfig();
@@ -42,6 +43,8 @@ class CleanupPlugin implements PluginInterface, EventSubscriberInterface
      */
     public static function getSubscribedEvents()
     {
+
+        echo "getSubscribedEvents------>>>>>>>";
         return array(
             ScriptEvents::POST_PACKAGE_INSTALL  => array(
                 array('onPostPackageInstall', 0)
@@ -49,12 +52,13 @@ class CleanupPlugin implements PluginInterface, EventSubscriberInterface
             ScriptEvents::POST_PACKAGE_UPDATE  => array(
                 array('onPostPackageUpdate', 0)
             ),
+            /*
             ScriptEvents::POST_INSTALL_CMD  => array(
                 array('onPostInstallUpdateCmd', 0)
             ),
             ScriptEvents::POST_UPDATE_CMD  => array(
                 array('onPostInstallUpdateCmd', 0)
-            )
+            ) */
         );
     }
 
