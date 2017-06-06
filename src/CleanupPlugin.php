@@ -1,6 +1,6 @@
 <?php
 
-namespace Barryvdh\Composer;
+namespace Marifetler\Composer;
 
 use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;
@@ -54,7 +54,7 @@ class CleanupPlugin implements PluginInterface, EventSubscriberInterface
             ),
             ScriptEvents::POST_UPDATE_CMD  => array(
                 array('onPostInstallUpdateCmd', 0)
-            ),
+            )
         );
     }
 

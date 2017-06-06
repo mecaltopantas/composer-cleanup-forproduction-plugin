@@ -1,6 +1,6 @@
 <?php
 
-namespace Barryvdh\Composer;
+namespace Marifetler\Composer;
 
 class CleanupRules
 {
